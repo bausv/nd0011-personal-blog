@@ -1,22 +1,22 @@
 .disclaimer {
-  /* margin: 20vh 30px 50vh; */
-  font-style:       italic;
-  border:           dashed 1px red;
-  padding:          0 10px;
-  position:         absolute;
-  background-color: white;
-  min-height:       30vh;
-  margin-left:      20px;
-  margin-right:     20px;
+    /* margin: 20vh 30px 50vh; */
+    font-style:       italic;
+    border:           dashed 1px red;
+    padding:          0 10px;
+    position:         absolute;
+    background-color: white;
+    min-height:       30vh;
+    margin-left:      20px;
+    margin-right:     20px;
 }
 
 .disclaimer > h1 {
-  color:      red;
-  font-style: normal;
-  text-align: center;
+    color:      red;
+    font-style: normal;
+    text-align: center;
 }
 
 .disclaimer-img {
-  width:  24px;
-  height: 24px;
+    width:  24px;
+    height: 24px;
 }

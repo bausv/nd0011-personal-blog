@@ -1,56 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>The Cloud Blog - Contact Us</title>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="icon" href="../icon.png">
-    <link rel="apple-touch-icon" href="../icon.png">
-    <script src="https://kit.fontawesome.com/b47cb6df1a.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>The Cloud Blog - Contact Us</title>
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../icon.png" rel="icon">
+  <link href="../icon.png" rel="apple-touch-icon">
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/b47cb6df1a.js"></script>
 </head>
 <body>
 <div class="container">
+  <header>
+    The Cloud Blog.
+  </header>
+  <nav>
+    <a class="nav-item" href="../index.html"><i class="fa-solid fa-home"></i> Home</a> <a class="nav-item" href="contact.html"><i class="fa-solid fa-file-signature"></i> Contact Us!</a>
+  </nav>
+  <main class="main-content">
     <header>
-        The Cloud Blog.
+      <h1 class="section-header">Great that you want to get in touch with us!</h1>
     </header>
-    <nav>
-        <a href="../index.html" class="nav-item"><i class="fa-solid fa-home"></i> Home</a>
-        <a href="contact.html" class="nav-item"><i class="fa-solid fa-file-signature"></i> Contact Us!</a>
-    </nav>
-    <main class="main-content">
-        <header>
-            <h1 class="section-header">Great that you want to get in touch with us!</h1>
-        </header>
-        <article class="card" id="contact-form">
-            <header>
-                <h2>Just fill out the form below and we will contact you soon!</h2>
-            </header>
-            <section class="card-content">
-                <form>
-                    <fieldset id="user-details">
-                        <label for="in-name">Your name</label>
-                        <input type="text" id="in-name" placeholder="Please enter your name" required>
-                        <label for="in-mail">Your e-mail</label>
-                        <input type="email" id="in-mail" placeholder="Please enter your e-mail address" required>
-                        <label for="in-comment">Your comment</label>
-                        <textarea id="in-comment" rows="15" cols="30" placeholder="Your comment goes here"></textarea>
-                        <span><!-- empty tag on purpose --></span>
-                        <span>
-                          <input type="checkbox" id="in-subscribe">
+    <article class="card" id="contact-form">
+      <header>
+        <h2>Just fill out the form below and we will contact you soon!</h2>
+      </header>
+      <section class="card-content">
+        <form>
+          <fieldset id="user-details">
+            <label for="in-name">Your name</label> <input id="in-name" placeholder="Please enter your name" required type="text"> <label for="in-mail">Your e-mail</label> <input id="in-mail"
+              placeholder="Please enter your e-mail address"
+              required
+              type="email"> <label for="in-comment">Your comment</label> <textarea cols="30" id="in-comment" placeholder="Your comment goes here" rows="15"></textarea>
+            <span><!-- empty tag on purpose --></span> <span>
+                          <input id="in-subscribe" type="checkbox">
                           <label for="in-subscribe">Yes, please sign me up for your Newsletter!</label>
                         </span>
-                    </fieldset>
-                </form>
-            </section>
-            <footer class="article-footer">
-                <button type="submit" class="button-main">Submit</button>
-                <button type="reset">Reset</button>
-            </footer>
-        </article>
-    </main>
-    <footer>
-        About | Imprint | Contact
-    </footer>
+          </fieldset>
+        </form>
+      </section>
+      <footer class="article-footer">
+        <button class="button-main" type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </footer>
+    </article>
+  </main>
+  <footer>
+    About | Imprint | Contact
+  </footer>
 </div>
 </body>
 </html>

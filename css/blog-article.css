@@ -1,74 +1,74 @@
 .blog-content {
-  display:               grid;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr;
-  overflow-y:            auto;
+    display:               grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    overflow-y:            auto;
 }
 
 .blog-content > header > h1 {
-  margin:          20px 20px 0;
-  text-decoration: underline;
-  font-size:       2rem;
+    margin:          20px 20px 0;
+    text-decoration: underline;
+    font-size:       2rem;
 }
 
 .blog-article {
-  grid-column-start: 1;
-  grid-column-end:   3;
+    grid-column-start: 1;
+    grid-column-end:   3;
 }
 
 .blog-article > figure > img {
-  width: 100%;
+    width: 100%;
 }
 
 figure {
-  margin-block-start:  0;
-  margin-block-end:    0;
-  margin-inline-start: 0;
-  margin-inline-end:   0;
+    margin-block-start:  0;
+    margin-block-end:    0;
+    margin-inline-start: 0;
+    margin-inline-end:   0;
 }
 
 figcaption {
-  color:      gray;
-  font-style: italic;
+    color:      gray;
+    font-style: italic;
 }
 
 .social-share {
-  display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
+    display:        flex;
+    align-items:    center;
+    flex-direction: row-reverse;
 }
 
 @media screen and (min-width: 768px) {
-  .blog-content {
-    grid-row: 2;
-  }
+    .blog-content {
+        grid-row: 2;
+    }
 
-  .blog-article {
-    margin: 20px;
-  }
+    .blog-article {
+        margin: 20px;
+    }
 
-  .blog-article > figure {
-    width:        50%;
-    float:        left;
-    margin-right: 20px;
-  }
+    .blog-article > figure {
+        width:        50%;
+        float:        left;
+        margin-right: 20px;
+    }
 }
 
 @media screen and (max-width: 767px) {
-  .blog-content {
-    grid-row:    3;
-    grid-column: 1;
-  }
+    .blog-content {
+        grid-row:    3;
+        grid-column: 1;
+    }
 
-  .blog-article > figure {
-    width:         100%;
-    margin-bottom: 20px;
-  }
+    .blog-article > figure {
+        width:         100%;
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 1439px) {
-  .blog-content {
-    grid-row:    3;
-    grid-column: 1;
-  }
+    .blog-content {
+        grid-row:    3;
+        grid-column: 1;
+    }
 }

@@ -38,6 +38,145 @@ figcaption {
     flex-direction: row-reverse;
 }
 
+blockquote {
+    border-left:  5px solid var(--blog-main-bg-color);
+    padding-left: 10px;
+}
+
+blockquote > p {
+    font-style: italic;
+    font-size:  1.2rem;
+}
+
+.author-info {
+    display: grid;
+    border:  2px dashed var(--blog-secondary-bg-color);
+}
+
+.author-about {
+    background-color: var(--blog-main-bg-color);
+    text-align:       center;
+    font-style:       italic;
+    font-size:        1.4rem;
+    padding:          10px;
+}
+
+.author-name {
+    font-size:   2rem;
+    font-weight: bold;
+}
+
+.author-title {
+    font-size: 1.2rem;
+    color:     gray;
+}
+
+.author-company {
+    font-size: 1.5rem;
+}
+
+.author-avatar > img {
+    border-radius: 50%;
+}
+
+.author-bio {
+    padding: 0 10px;
+}
+
+@media screen and (min-width: 1280px) {
+    .author-info {
+        grid-template-columns: 30% 70%;
+        grid-template-rows: auto;
+        margin:                0 30%;
+    }
+
+    .author-about {
+        grid-column-start: 1;
+        grid-column-end:   3;
+        grid-row:          1;
+    }
+
+    .author-avatar {
+        grid-column:    1;
+        grid-row-start: 2;
+        grid-row-end:   5;
+        padding:        20px 10px 20px 0;
+    }
+
+    .author-name {
+        grid-column: 2;
+        grid-row:    2;
+        padding-top: 20px;
+    }
+
+    .author-title {
+        grid-column: 2;
+        grid-row:    3;
+    }
+
+    .author-company {
+        grid-column: 2;
+        grid-row:    4;
+    }
+
+    .author-bio {
+        grid-row:          5;
+        grid-column-start: 1;
+        grid-column-end:   3;
+    }
+
+    .author-avatar > img {
+        width:  100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .author-info {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin:                0 30%;
+    }
+
+    .author-about {
+        grid-row: 1;
+    }
+
+    .author-avatar {
+        grid-column:     1;
+        grid-row:        2;
+        padding:         10px;
+        display:         flex;
+        align-items:     center;
+        justify-content: center;
+    }
+
+    .author-name {
+        grid-column: 1;
+        grid-row:    3;
+        text-align:  center;
+    }
+
+    .author-title {
+        grid-row:   4;
+        text-align: center;
+    }
+
+    .author-company {
+        grid-row:   5;
+        text-align: center;
+    }
+
+    .author-bio {
+        grid-row: 6;
+    }
+
+    .author-avatar > img {
+        width:  min(100px, 100%);
+        height: min(100px, 100%);
+    }
+}
+
 @media screen and (min-width: 768px) {
     .blog-content {
         grid-row: 2;
